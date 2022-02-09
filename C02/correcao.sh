@@ -1,6 +1,18 @@
 clear
 echo '\n Realizando teste da norminette -R\n'
-norminette -R CheckForbiddenSourceHeader
+norminette -R CheckForbiddenSourceHeader ex00/ft_strcpy.c
+norminette -R CheckForbiddenSourceHeader ex01/ft_strncpy.c
+norminette -R CheckForbiddenSourceHeader ex02/ft_str_is_alpha.c
+norminette -R CheckForbiddenSourceHeader ex03/ft_str_is_numeric.c
+norminette -R CheckForbiddenSourceHeader ex04/ft_str_is_lowercase.c
+norminette -R CheckForbiddenSourceHeader ex05/ft_str_is_uppercase.c
+norminette -R CheckForbiddenSourceHeader ex06/ft_str_is_printable.c
+norminette -R CheckForbiddenSourceHeader ex07/ft_strupcase.c
+norminette -R CheckForbiddenSourceHeader ex09/ft_strlowcase.c
+norminette -R CheckForbiddenSourceHeader ex09/ft_strcapitalize.c
+norminette -R CheckForbiddenSourceHeader ex10/ft_strlcpy.c
+norminette -R CheckForbiddenSourceHeader ex11/ft_putstr_non_printable.c
+norminette -R CheckForbiddenSourceHeader ex12/ft_print_memory.c
 echo '\nTeste da norminette concluido\n'
 echo '\nRealizando teste de GCC\n'
 mkdir test
