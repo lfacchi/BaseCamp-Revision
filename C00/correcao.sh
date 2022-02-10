@@ -1,5 +1,8 @@
+#!/bin/sh
 clear
-echo '\n Realizando teste da norminette -R\n'
+echo ' ' 
+echo Realizando teste da norminette -R
+echo " "
 norminette -R CheckForbiddenSourceHeader ex00/ft_putchar.c
 norminette -R CheckForbiddenSourceHeader ex01/ft_print_alphabet.c
 norminette -R CheckForbiddenSourceHeader ex02/ft_print_reverse_alphabet.c
@@ -9,8 +12,11 @@ norminette -R CheckForbiddenSourceHeader ex05/ft_print_comb.c
 norminette -R CheckForbiddenSourceHeader ex06/ft_print_comb2.c
 norminette -R CheckForbiddenSourceHeader ex07/ft_putnbr.c
 norminette -R CheckForbiddenSourceHeader ex08/ft_print_combn.c
-echo '\nTeste da norminette concluido\n'
-echo '\nRealizando teste de GCC\n'
+echo " "
+echo "Teste da norminette concluido"
+echo " "
+echo 'Compilando Arquivos'
+echo " "
 mkdir test
 gcc -Wall -Werror -Wextra correcao/ex00.c ex00/ft_putchar.c -o test/ex00.out
 gcc -Wall -Werror -Wextra correcao/ex01.c ex01/ft_print_alphabet.c -o test/ex01.out
@@ -21,25 +27,56 @@ gcc -Wall -Werror -Wextra correcao/ex05.c ex05/ft_print_comb.c -o test/ex05.out
 gcc -Wall -Werror -Wextra correcao/ex06.c ex06/ft_print_comb2.c -o test/ex06.out
 gcc -Wall -Werror -Wextra correcao/ex07.c ex07/ft_putnbr.c -o test/ex07.out
 gcc -Wall -Werror -Wextra correcao/ex08.c ex08/ft_print_combn.c -o test/ex08.out
-echo '\n Teste de GCC concluido\n'
-echo '\n Realizando teste de resultado'
-echo '\n Exercicio 00'
+echo " "
+echo 'Compilação concluida'
+echo " "
+echo 'Imprimindo resultados'
+echo " "
+echo "-----------------------------------"
+echo 'Exercicio 00'
+echo " "
 ./test/ex00.out 
-echo '\n \n Exercicio 01'
-./test/ex01.out 
-echo '\n \n Exercicio 02'
+echo " "
+echo "-----------------------------------"
+echo 'Exercicio 01'
+echo " "
+./test/ex01.out
+echo " " 
+echo "-----------------------------------" 
+echo 'Exercicio 02'
+echo " "
 ./test/ex02.out 
-echo '\n \n Exercicio 03'
+echo " "
+echo "-----------------------------------"
+echo 'Exercicio 03'
+echo " "
 ./test/ex03.out 
-echo '\n \n Exercicio 04'
+echo " "
+echo "-----------------------------------"
+echo 'Exercicio 04'
+echo " "
 ./test/ex04.out 
-echo '\n \n Exercicio 05'
+echo " "
+echo "-----------------------------------"
+echo 'Exercicio 05'
+echo " "
 ./test/ex05.out 
-echo '\n \n Exercicio 06'
+echo " "
+echo "-----------------------------------"
+echo 'Exercicio 06'
+echo " "
 ./test/ex06.out 
-echo '\n \n Exercicio 07'
+echo " "
+echo "-----------------------------------"
+echo 'Exercicio 07'
+echo " "
 ./test/ex07.out 
-echo '\n \n Exercicio 08'
+echo " "
+echo "-----------------------------------"
+echo 'Exercicio 08'
+echo " "
 ./test/ex08.out 
-echo '\nTodos os testes foram concluidos.\n'
+echo " "
+echo "-----------------------------------"
+echo 'Todos os testes foram concluidos.'
 rm -r test
